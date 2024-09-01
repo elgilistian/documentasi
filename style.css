@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #0056b3;
+}
+
+.gallery {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Gaya untuk setiap item galeri */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.gallery-info p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.gallery-info button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.gallery-info button:hover {
+    background-color: #0056b3;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+/* Gaya responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Satu kolom pada tampilan mobile */
+    }
+}
+
+/* Gaya untuk tampilan desktop */
+@media (min-width: 769px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* Empat kolom pada tampilan desktop */
+    }
+}
+
+.notice {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffcccc; /* Warna latar belakang merah muda */
+    color: #800000; /* Warna teks merah gelap */
+    text-align: center;
+    border: 1px solid #800000; /* Garis batas merah */
+    border-radius: 5px;
+    font-size: 1.1rem;
+}

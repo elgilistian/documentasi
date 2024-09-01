@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <button onclick="goToMainWebsite()">Kembali ke Website Utama</button>
+    </header>
+
+    <div class="notice">
+        <p>Elgi Belum meng-upload Halaman. Silakan periksa kembali nanti atau hubungi administrator untuk informasi lebih lanjut.</p>
+    </div>
+    
+    
+    <main>
+        <div class="gallery">
+            <!-- Contoh item galeri -->
+            <div class="gallery-item">
+                <img src="image1.jpg" alt="Gambar 1">
+                <div class="gallery-info">
+                    <h3>Judul Gambar 1</h3>
+                    <p>Deskripsi singkat untuk gambar 1.</p>
+                    <button onclick="showDetails('image1')">Detail</button>
+                </div>
+            </div>
+            <!-- Tambahkan gambar-gambar lainnya dengan format yang sama -->
+            <div class="gallery-item">
+                <img src="image2.jpg" alt="Gambar 2">
+                <div class="gallery-info">
+                    <h3>Judul Gambar 2</h3>
+                    <p>Deskripsi singkat untuk gambar 2.</p>
+                    <button onclick="showDetails('image2')">Detail</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="ga,bar.jpg" alt="">
+                <div class="gallery-info">
+                    <h3>Judul Gambar 2</h3>
+                    <p>Deskripsi singkat untuk gambar 2.</p>
+                    <button onclick="showDetails('image2')">Detail</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="image2.jpg" alt="Gambar 2">
+                <div class="gallery-info">
+                    <h3>Judul Gambar 2</h3>
+                    <p>Deskripsi singkat untuk gambar 2.</p>
+                    <button onclick="showDetails('image2')">Detail</button>
+                </div>
+            </div>
+            <!-- Ulangi pola ini untuk setiap gambar -->
+    </main>
+
+    <script>
+        function goToMainWebsite() {
+            window.location.href = "https://elgilistian.github.io/Personal-Website/"; // Ganti dengan URL website utama
+        }
+
+        function showDetails(imageId) {
+            alert('Menampilkan detail untuk ' + imageId); // Ganti dengan aksi yang diinginkan
+        }
+    </script>
+</body>
+</html>
